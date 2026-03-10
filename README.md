@@ -81,7 +81,43 @@ Unlike traditional systems with fixed thresholds, this system **learns YOUR pers
   │                                                          │
   └──────────────────────────────────────────────────────────┘
 ```
-
+## project structure
+fpga_rl_health_monitor/
+│
+├── data/
+│   ├── ecg_simulator.py          # Synthetic ECG generator
+│   └── logs/                     # Stored system logs
+│
+├── fpga_interface/
+│   ├── __init__.py
+│   └── fpga_stream.py            # Module 2: FPGA hardware abstraction layer
+│
+├── signal_processing/
+│   ├── __init__.py
+│   └── features.py               # Module 3: Feature extraction (HR, HRV etc.)
+│
+├── rl_engine/
+│   ├── __init__.py
+│   └── q_learning.py             # Module 4: Reinforcement learning agent
+│
+├── decision_engine/
+│   ├── __init__.py
+│   └── explainable_ai.py         # Module 5: Explainable AI decisions
+│
+├── utils/
+│   ├── __init__.py
+│   ├── adaptive_controller.py    # Module 6: Closed-loop control
+│   └── logger.py                 # Module 7: Data logging & replay
+│
+├── dashboard/
+│   ├── __init__.py
+│   └── app.py                    # Module 8: Streamlit web dashboard
+│
+├── main.py                       # System entry point
+├── setup.py                      # Automated setup script
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
+---
 ### Module Breakdown
 
 | Module | Purpose | Key Technology |
@@ -581,17 +617,17 @@ chmod -R 755 data/
 
 ## 🚀 Future Enhancements
 
-### Phase 1 (Next 2 weeks)
+### Phase 1
 - [ ] Real FPGA UART implementation
 - [ ] Mobile app interface
 - [ ] Cloud data backup
 
-### Phase 2 (Next 1 month)
+### Phase 2
 - [ ] Multi-lead ECG support
 - [ ] Arrhythmia classification
 - [ ] Doctor dashboard
 
-### Phase 3 (Next 3 months)
+### Phase 3
 - [ ] Deep RL (DQN, PPO)
 - [ ] Edge deployment (Raspberry Pi)
 - [ ] Clinical validation
@@ -606,17 +642,14 @@ MIT License - Feel free to use for research and education.
 
 ## 👥 Contributors
 
-- **Your Name** - System Architecture, RL Engine, Integration
-- **Team Member** - Signal Processing, FPGA Interface
-
+- **Your Name** - Somesh Guguloth
 ---
 
 ## 📧 Contact
 
-- **Email**: your.email@example.com
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-
+- **Email**: mas_2025005@iiitm.ac.in
+- **GitHub**: https://github.com/GugulothSomesh
+- **LinkedIn**: https://linkedin.com/in/somesh-guguloth-39a689381
 ---
 
 ## 🙏 Acknowledgments
