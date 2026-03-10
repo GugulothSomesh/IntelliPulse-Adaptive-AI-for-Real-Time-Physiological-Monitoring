@@ -1,0 +1,4 @@
+loop_number,timestamp,level,level_numeric,confidence,short_explanation,hr,hrv,quality,log_timestamp
+261,2026-03-10T15:12:35.716937,CRITICAL,3,72.0,"severe tachycardia, reduced variability, arrhythmia",178.57142857142858,24.0,72.0,2026-03-10T15:12:35.716937
+262,2026-03-10T15:12:35.826973,CRITICAL,3,87.57678043107836,"severe tachycardia, reduced variability, unstable rhythm",169.49152542372883,42.0,87.57678043107836,2026-03-10T15:12:35.828980
+263,2026-03-10T15:12:35.944385,CRITICAL,3,67.42142294921366,"severe tachycardia, unstable rhythm",153.0612244897959,76.0,84.27677868651708,2026-03-10T15:12:35.944385
