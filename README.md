@@ -81,7 +81,9 @@ Unlike traditional systems with fixed thresholds, this system **learns YOUR pers
   │                                                          │
   └──────────────────────────────────────────────────────────┘
 ```
-## project structure
+## Project Structure
+
+```
 fpga_rl_health_monitor/
 │
 ├── data/
@@ -117,7 +119,7 @@ fpga_rl_health_monitor/
 ├── setup.py                      # Automated setup script
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
----
+```
 ### Module Breakdown
 
 | Module | Purpose | Key Technology |
